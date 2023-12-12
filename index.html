@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,11 +11,24 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Montserrat"
+    />
 
     <title>Pricing component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -23,13 +36,52 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      section {
+        display: flex;
+      }
+      .side-divs {
+        border: 1px solid black;
+        padding: 20px;
+        width: 10vw;
+      }
+      header {
+        height: 20vh;
+      }
+      .title {
+        margin-top: 60px;
+      }
     </style>
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <header>
+      <h2 class="title">Our Pricing</h2>
+      <p>Annually Monthly</p>
+    </header>
+    <section>
+      <div class="side-divs">
+        <p>Basic</p>
+        <p>&dollar;19.99</p>
+        <p>500 GB Storage</p>
+        <p>2 Users Allowed</p>
+        <p>Send up to 3 GB</p>
+        <button>Learn More</button>
+      </div>
+      <div>
+        <p>Professional</p>
+        <p>&dollar;24.99</p>
+        <p>1 TB Storage</p>
+        <p>5 Users Allowed</p>
+        <p>Send up to 10 GB</p>
+        <button>Learn More</button>
+      </div>
+      <div class="side-divs">
+        <p>Master</p>
+        <p>&dollar;39.99</p>
+        <p>2 TB Storage</p>
+        <p>10 Users Allowed</p>
+        <p>Send up to 20 GB</p>
+        <button>Learn More</button>
+      </div>
+    </section>
   </body>
 </html>
