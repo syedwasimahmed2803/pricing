@@ -74,7 +74,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--second-gradient);
+  background-color: var(--first-gradient);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -126,7 +126,7 @@ input:checked + .slider:before {
   border-radius: 0px 20px 20px 0px;
 }
 .big-text {
-  font-size: 65px;
+  font-size: 55px;
   margin: 10px;
   color: rgb(85, 84, 84);
 }
@@ -171,13 +171,13 @@ button {
 
 @media only screen and (max-width: 970px) {
   .big-text {
-    font-size: 55px;
+    font-size: 45px;
     margin: 7px;
   }
 }
 @media only screen and (max-width: 790px) {
   .big-text {
-    font-size: 45px;
+    font-size: 40px;
     margin: 5px;
   }
 }
@@ -196,7 +196,7 @@ button {
     width: 70vw;
   }
   .big-text {
-    font-size: 100px;
+    font-size: 90px;
   }
   h3 {
     font-size: 30px;
@@ -207,7 +207,7 @@ button {
 }
 @media only screen and (max-width: 430px) {
   .big-text {
-    font-size: 80px;
+    font-size: 70px;
     margin: 5px;
   }
 }
