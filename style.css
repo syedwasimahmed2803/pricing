@@ -151,6 +151,9 @@ button {
   text-transform: uppercase;
   font-weight: 700;
 }
+button:hover {
+  cursor: pointer;
+}
 .big {
   background-image: linear-gradient(
     var(--first-gradient),
