@@ -118,6 +118,7 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0.6rem 1.6rem #b3b5c6b0;
 }
 .one {
   border-radius: 20px 0px 0px 20px;
