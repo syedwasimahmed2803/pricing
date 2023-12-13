@@ -1,3 +1,12 @@
+:root {
+  --Very-Light: hsl(240, 78%, 98%);
+  --Light: hsl(234, 14%, 74%);
+  --Gray: hsl(233, 13%, 49%);
+  --Dark: hsl(232, 13%, 33%);
+  --first-gradient: hsl(236, 72%, 79%);
+  --second-gradient: hsl(237, 63%, 64%);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -9,14 +18,12 @@ body {
   background:
     url(images/bg-top.svg) no-repeat top right fixed,
     url(images/bg-bottom.svg) no-repeat bottom left fixed;
-  background-color: hsl(240, 78%, 98%);
+  background-color: var(--Very-Light);
 }
 .attribution {
   text-align: center;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 section {
   display: flex;
   align-items: center;
@@ -37,10 +44,10 @@ header {
 .title {
   margin-top: 60px;
   font-size: 40px;
-  color: hsl(233, 13%, 49%);
+  color: var(--Gray);
 }
 .button-component {
-  color: hsl(234, 14%, 74%);
+  color: var(--Light);
   width: max-content;
 }
 /* slider css */
@@ -85,7 +92,7 @@ header {
 }
 
 input:checked + .slider {
-  background-color: hsla(237, 63%, 64%, 0.733);
+  background-color: var(--first-gradient);
 }
 
 input:checked + .slider:before {
@@ -134,7 +141,10 @@ p {
 button {
   width: 18vw;
   height: 5vh;
-  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: linear-gradient(
+    var(--first-gradient),
+    var(--second-gradient)
+  );
   border: none;
   border-radius: 5px;
   color: white;
@@ -142,7 +152,10 @@ button {
   font-weight: 700;
 }
 .big {
-  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: linear-gradient(
+    var(--first-gradient),
+    var(--second-gradient)
+  );
   color: white;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -150,7 +163,7 @@ button {
 }
 .white {
   background: white;
-  color: hsl(237, 63%, 64%);
+  color: var(--second-gradient);
 }
 .special {
   color: white;
