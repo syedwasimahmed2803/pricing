@@ -4,4 +4,4 @@
 
 # Deployed Project Link
 
-[ZEIT NOW LINK](https://pricing-woad.vercel.app/)
+[https://pricing-woad.vercel.app/](https://pricing-woad.vercel.app/)
